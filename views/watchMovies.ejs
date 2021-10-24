@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>21 Savage Fans</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet" href="font-awesome.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>saved Movies</h1>
+  <h2>your to-watch list</h2>
+
+  
+  <ul class="results">
+    <% for(var i=0; i < savedMovies.length; i++) {%>
+      <li class="message">
+        <h4><%= savedMovies[i].title %></h4>  
+        <p><%= savedMovies[i].genre %></p>
+        <p><%= savedMovies[i].year %></p>
+        <span><i class="fa fa-ticket"></i></span> 
+        <span><i class="fa fa-heart"></i></span>
+        <span><i class="fa fa-times"></i></span>
+      <% } %>   
+      <button class='toSearchPage'><a href='/movieSearchpage'>home</a></button>
+      <button class='toSavePage'><a href='/moviesSaved'>saved</a></button>
+  <script src="main.js"></script>
+
+</body>
+</html>

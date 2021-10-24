@@ -1,0 +1,32 @@
+body{
+  background: beige;
+  background-image: url(marlon.gif);
+  background-size: cover;
+  height: 100vh;
+    padding:0;
+    margin:0;
+}
+h3{
+  margin-top: 40px;
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+  flex-flow: row wrap;
+}
+
+li{
+  border: 1px solid black;
+  width: 500px;
+  margin-bottom: 10px;
+  background: white;
+  padding: 5px;
+}
+
+.liked{
+  background-color: green;
+}
+.disliked{
+  background-color: red;
+}

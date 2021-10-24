@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>mvapp:search Results</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet" href="font-awesome.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Movie Search!</h1>
+  <h2>Search Results!</h2>
+  <p class='email'> <%= user.local.email %></p>
+  <ul class="results">
+  <% for(var i=0; i < movies.length; i++) {%>
+    <li class="message">
+      <h4><%= movies[i]["original_title"] %></h4>  
+      <p><%= movies[i]["overview"] %></p>
+      <p><%= movies[i]["release_date"] %></p>
+
+      <span><i class="fa fa-ticket"></i></span> 
+      
+      <!-- <span><i class="fa fa-thumbs-up" aria-hidden="true"></i></span>
+      <span><i class="fa fa-thumbs-down" aria-hidden="true"></i></span>
+      <span><i class="fa fa-trash" aria-hidden="true"></i></span> -->
+    </li>
+  <% } %>
+  </ul>
+  <button class='toSearchPage'><a href='/movieSearchPage'>home</a></button>
+  <button class='toSavePage'><a href='/savedMovies'>saved</a></button>
+  
+  <!-- <h2>find movies by genre</h2>
+
+  <form action="/search" method="GET">
+    <select name="genre" id="genresAvailable">
+      <option value="27">Horror</option>//use id 
+      <option value="thriller">Thriller</option>
+      <option value="action">Action</option>
+      <option value="romance">Romance</option>
+      <option value="animation">Animation</option>
+      <option value="kids">Kids</option>
+      <option value="short">Shorts</option>
+    </select>
+    <button type="submit">Submit</button>
+  </form> back button to original page-->
+
+  <script src="main.js"></script>
+
+</body>
+</html>
