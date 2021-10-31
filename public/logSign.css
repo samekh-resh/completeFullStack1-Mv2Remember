@@ -1,0 +1,64 @@
+
+/* The element to apply the animation to */
+body {
+  animation: pokeRoulette 25s infinite;
+  /* background-repeat: no-repeat; */
+  background-size: 100%;
+}
+@keyframes pokeRoulette {
+  0% {
+    background-image: url("img/club.jpg");
+  }
+  25% {
+    background-image: url("img/matrix.jpg");
+  }
+  50% {
+    background-image: url("img/pulp.jpg");
+  }
+  75% {
+    background-image: url("img/shining.jpg");
+  }
+  100% {
+    background-image: url("img/getOut.jpg");
+  }
+}
+
+
+
+.container{
+  background: blue;
+  width: 500px;
+  height: 100%;
+  margin-top: 15%;
+  border-radius: 10% 30% 50% 70%;
+  color: white;
+  text-align: center;
+  padding: 5%;
+}
+
+@keyframes containerAni {
+  0% {
+    background-color: bisque;
+  }
+  25% {
+    background-color: rgb(235, 196, 149);
+  }
+  50% {
+    background-color: rgb(240, 172, 89);
+  }
+  75% {
+    background-color: rgb(247, 158, 49);
+  }
+  100% {
+    background-color: rgb(255, 140, 0);
+  }
+}
+
+/* The element to apply the animation to */
+.container{
+  animation: containerAni 25s infinite;
+}
+
+.box{
+  width: 250px;
+}
