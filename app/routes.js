@@ -4,7 +4,9 @@ module.exports = function (app, passport, db) {
   const ObjectID = require('mongodb').ObjectID
   const fetch = require('node-fetch')
   //routes
-  const movieUrl = 'https://api.themoviedb.org/3/discover/movie?api_key=fface74380e622e47314fdd9a9ad4db3&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&with_watch_monetization_types=flatrate%27&with_genres='
+  const api_key = process.env.API_KEY
+  const movieUrl = `https://api.themoviedb.org/3/discover/movie?api_key=${api_key}&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&with_watch_monetization_types=flatrate%27&with_genres=`
+
 
   // normal routes ===
 

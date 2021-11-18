@@ -1,6 +1,12 @@
+if (process.env.NODE_ENV !== 'production') {
+  require('dotenv').config();
+ }
+
+ //server.js
+
 const express = require('express')
 const app = express()
-var port     = process.env.PORT || 3000;
+var port     = process.env.PORT || 3001;
 const MongoClient = require('mongodb').MongoClient
 var mongoose = require('mongoose');
 var passport = require('passport');
@@ -11,6 +17,7 @@ var cookieParser = require('cookie-parser');
 var bodyParser   = require('body-parser');
 var session      = require('express-session');
 
+// console.log(process.env)
 var configDB = require('./config/database.js');
 
 let db;
